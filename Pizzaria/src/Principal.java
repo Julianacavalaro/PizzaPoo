@@ -4,37 +4,36 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Pizza pizza1 = new Pizza();
-		Pizza pizza2 = new Pizza();
-		Pizza pizza3 = new Pizza();
-		Pizza pizza4 = new Pizza();
+		Pizza pizzaMeioAMeio = new Pizza();
+		Pizza pizzaPortuguesa = new Pizza();
+		Pizza pizzaCarneDeSol = new Pizza();
+		Pizza pizzaSemIngrediente = new Pizza();
 
 		CarrinhoDeCompras cart = new CarrinhoDeCompras();
 	
 
-		pizza1.adicionaIngrediente("Mussarela");
-		pizza1.adicionaIngrediente("Palmito");
+		pizzaMeioAMeio.adicionaIngrediente("Mussarela");
+		pizzaMeioAMeio.adicionaIngrediente("Palmito");
 		
-		System.out.println(" pizza4 getPreco " + pizza4.getPreco());
-		pizza1.getIngrediente().size();
+		System.out.println("pizzaSemIngrediente getPreco " + pizzaSemIngrediente.getPreco());
 		
-		pizza2.adicionaIngrediente("Frango");
-		pizza2.adicionaIngrediente("Cheddar");
-		pizza2.adicionaIngrediente("Mussarela");
-		pizza2.adicionaIngrediente("Cebola");
-		pizza2.adicionaIngrediente("Alho");
-		pizza2.adicionaIngrediente("Manjericão");
+		System.out.println("pizzaMeioAMeio.getIngrediente().size() " + pizzaMeioAMeio.getIngrediente().size());
 		
-		pizza2.getPreco();
+		pizzaPortuguesa.adicionaIngrediente("Frango");
+		pizzaPortuguesa.adicionaIngrediente("Cheddar");
+		pizzaPortuguesa.adicionaIngrediente("Mussarela");
+		pizzaPortuguesa.adicionaIngrediente("Cebola");
+		pizzaPortuguesa.adicionaIngrediente("Alho");
+		pizzaPortuguesa.adicionaIngrediente("Manjericão");
 
-		pizza3.adicionaIngrediente("Carne de Sol");
-		pizza3.adicionaIngrediente("Provolone");
-		pizza3.adicionaIngrediente("Cebola");
+		pizzaCarneDeSol.adicionaIngrediente("Carne de Sol");
+		pizzaCarneDeSol.adicionaIngrediente("Provolone");
+		pizzaCarneDeSol.adicionaIngrediente("Cebola");
 		
-		cart.addPizza(pizza1);
-		cart.addPizza(pizza2);
-		cart.addPizza(pizza3);
-		cart.addPizza(pizza4);
+		cart.adicionaPizza(pizzaMeioAMeio);
+		cart.adicionaPizza(pizzaPortuguesa);
+		cart.adicionaPizza(pizzaCarneDeSol);
+		cart.adicionaPizza(pizzaSemIngrediente);
 		
 		System.out.println("Total de pizzas no carrinho: " +cart.totalPizzas());
 		System.out.println("Valor total da compra: " + cart.getPrecoTotalPizzas() + " R$");
