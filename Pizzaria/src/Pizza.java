@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class Pizza {
 
-    public static int quantidadeContadorIngredientes =0;
     private ArrayList<String> ingrediente = new ArrayList<>();
 
     public static Map<String, Integer> ingredientesMap = new HashMap<String, Integer>();
@@ -28,21 +27,24 @@ public class Pizza {
 	} else {
 		ingredientesMap.put(nomeIngrediente, 1);
 	}
-	quantidadeContadorIngredientes++;
 }
 
 	
 	public int getPreco() {
 	    int preco = 0;
-		if(quantidadeContadorIngredientes <=2) {
+	    if(getIngrediente().size() == 0) {
+	    return preco;
+	    }
+		if(getIngrediente().size() <=2) {
 			preco = 15;
 		}
-		else if(quantidadeContadorIngredientes >=3 && quantidadeContadorIngredientes<= 5) {
+		else if(getIngrediente().size() >=3 && getIngrediente().size()<= 5) {
 			preco = 20;
 		}else {
 			preco = 23;
 		}
 		return preco;
 	}
+	    
 
 }
