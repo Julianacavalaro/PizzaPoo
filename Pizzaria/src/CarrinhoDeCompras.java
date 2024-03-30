@@ -8,9 +8,9 @@ public class CarrinhoDeCompras  {
 
 
 	// O carrinho não adiciona uma pizza caso não tenha ingredientes
-	public void adicionaPizza(Pizza pizza) {
+	public void adicionaPizzaaoCarrinho(Pizza pizza) {
 		if((pizza.getIngrediente().isEmpty())) {
-			System.out.println("Pizza Sem ingrediente - NAO Aceito");
+			System.out.println("Pizza Sem ingrediente - NAO adicionada ao carrinho");
 		} else {
 		pizzas.add(pizza);
 		System.out.println("Pizza COM ingredientes");

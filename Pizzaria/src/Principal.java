@@ -30,10 +30,10 @@ public class Principal {
 		pizzaCarneDeSol.adicionaIngrediente("Provolone");
 		pizzaCarneDeSol.adicionaIngrediente("Cebola");
 		
-		cart.adicionaPizza(pizzaMeioAMeio);
-		cart.adicionaPizza(pizzaPortuguesa);
-		cart.adicionaPizza(pizzaCarneDeSol);
-		cart.adicionaPizza(pizzaSemIngrediente);
+		cart.adicionaPizzaaoCarrinho(pizzaMeioAMeio);
+		cart.adicionaPizzaaoCarrinho(pizzaPortuguesa);
+		cart.adicionaPizzaaoCarrinho(pizzaCarneDeSol);
+		cart.adicionaPizzaaoCarrinho(pizzaSemIngrediente);
 		
 		System.out.println("Total de pizzas no carrinho: " +cart.totalPizzas());
 		System.out.println("Valor total da compra: " + cart.getPrecoTotalPizzas() + " R$");
