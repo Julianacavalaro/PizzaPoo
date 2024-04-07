@@ -11,6 +11,9 @@ public class Pizza {
 	public ArrayList<String> getIngredientes(){
 		return ingrediente;	
 	}
+	public static void zeraIngrediesssntes() {
+		ingredientesMap.clear();
+	}
 	
 	 public static Map<String, Integer> getIgredientesMap() {
 		 return ingredientesMap;
