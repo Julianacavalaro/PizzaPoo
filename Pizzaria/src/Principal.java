@@ -17,7 +17,7 @@ public class Principal {
 		
 		System.out.println("pizzaSemIngrediente getPreco " + pizzaSemIngrediente.getPreco());
 		
-		System.out.println("pizzaMeioAMeio.getIngrediente().size() " + pizzaMeioAMeio.getIngrediente().size());
+		System.out.println("pizzaMeioAMeio.getIngrediente().size() " + pizzaMeioAMeio.getIngredientes().size());
 		
 		pizzaPortuguesa.adicionaIngrediente("Frango");
 		pizzaPortuguesa.adicionaIngrediente("Cheddar");

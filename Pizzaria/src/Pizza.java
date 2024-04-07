@@ -8,7 +8,7 @@ public class Pizza {
 
     public static Map<String, Integer> ingredientesMap = new HashMap<String, Integer>();
 
-	public ArrayList<String> getIngrediente(){
+	public ArrayList<String> getIngredientes(){
 		return ingrediente;	
 	}
 	
@@ -32,13 +32,13 @@ public class Pizza {
 	
 	public int getPreco() {
 	    int preco = 0;
-	    if(getIngrediente().size() == 0) { // .size() retorna o tamanho do Array(Lista)
+	    if(getIngredientes().size() == 0) { // .size() retorna o tamanho do Array(Lista)
 	    return preco;
 	    }
-		if(getIngrediente().size() <=2) {
+		if(getIngredientes().size() <=2) {
 			preco = 15;
 		}
-		else if(getIngrediente().size() >=3 && getIngrediente().size()<= 5) {
+		else if(getIngredientes().size() >=3 && getIngredientes().size()<= 5) {
 			preco = 20;
 		}else {
 			preco = 23;

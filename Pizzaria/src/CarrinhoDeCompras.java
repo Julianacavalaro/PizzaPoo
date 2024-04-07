@@ -3,13 +3,13 @@ import java.util.ArrayList;
 
 public class CarrinhoDeCompras  {
 
-	 int precoTotal;
+	 double precoTotal;
 	private  ArrayList<Pizza> pizzas = new ArrayList<Pizza>();
 
 
 	// O carrinho não adiciona uma pizza caso não tenha ingredientes
 	public void adicionaPizzaaoCarrinho(Pizza pizza) {
-		if((pizza.getIngrediente().isEmpty())) {
+		if((pizza.getIngredientes().isEmpty())) {
 			System.out.println("Pizza Sem ingrediente - NAO adicionada ao carrinho");
 		} else {
 		pizzas.add(pizza);
@@ -21,7 +21,7 @@ public class CarrinhoDeCompras  {
 		return pizzas.size();
 	}
 	
-	public int getPrecoTotalPizzas(){
+	public double getPrecoTotalPizzas(){
 
 		for(int i =0; i < pizzas.size() ; i++) {
 			precoTotal = precoTotal + pizzas.get(i).getPreco();
