@@ -8,14 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class Pizza_test extends Pizza {
-
-	@Test
-	void valorPizzaSemIngrediente() {
-	Pizza pizzaDeVento = new Pizza();
-	assertEquals(pizzaDeVento.getIngredientes().isEmpty(),true);
-	assertEquals(pizzaDeVento.getPreco() == 0, true);
-	assertEquals(Pizza.getIgredientesMap().isEmpty() , true);
-	}
 	
 	@Test
 	void valorPizzaComDoisIngredientes() {
@@ -54,26 +46,22 @@ class Pizza_test extends Pizza {
 
 	}
 	
-	
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
 	}
 
 	@BeforeEach
 	void setUp() throws Exception {
+		Pizza.zeraIngredientes();
+		System.out.println("@BeforeEach");
 	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void valorPizzaSemIngrediente() {
+	Pizza pizzaDeVento = new Pizza();
+	assertEquals(pizzaDeVento.getIngredientes().isEmpty(),true);
+	assertEquals(pizzaDeVento.getPreco() == 0, true);
+	assertEquals(Pizza.getIgredientesMap().isEmpty() , true);
 	}
+
 
 }

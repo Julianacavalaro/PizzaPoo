@@ -11,7 +11,7 @@ public class Pizza {
 	public ArrayList<String> getIngredientes(){
 		return ingrediente;	
 	}
-	public static void zeraIngrediesssntes() {
+	public static void zeraIngredientes() {
 		ingredientesMap.clear();
 	}
 	
