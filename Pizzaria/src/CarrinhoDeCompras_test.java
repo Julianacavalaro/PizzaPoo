@@ -16,10 +16,10 @@ public class CarrinhoDeCompras_test {
 		CarrinhoDeCompras carrinhoVazio = new CarrinhoDeCompras();
 		Pizza pizza = new Pizza();
 		carrinhoVazio.adicionaPizzaaoCarrinho(pizza);
-		assertEquals(carrinhoVazio.getPrecoTotalPizzas() == 0, true);
-		assertEquals(carrinhoVazio.precoTotal == 0, true);
-		assertEquals(carrinhoVazio.getPrecoTotalPizzas() == 0, true);
-		assertEquals(carrinhoVazio.totalPizzas() == 0, true);
+		assertEquals(carrinhoVazio.getPrecoTotalPizzas(), 0);
+		assertEquals(carrinhoVazio.precoTotal, 0);
+		assertEquals(carrinhoVazio.getPrecoTotalPizzas(), 0);
+		assertEquals(carrinhoVazio.totalPizzas(), 0);
 	}
 	@Test
 	void AdicionaPizzaaoCarrinho() {
@@ -27,7 +27,7 @@ public class CarrinhoDeCompras_test {
 		Pizza pizza = new Pizza();
 		pizza.adicionaIngrediente("Queijo");
 		carrinho.adicionaPizzaaoCarrinho(pizza);
-		assertEquals(carrinho.totalPizzas()== 1, true);
+		assertEquals(carrinho.totalPizzas(), 1);
 	}
 	@Test
 	void getPrecoTotalPizzas() {
@@ -35,7 +35,7 @@ public class CarrinhoDeCompras_test {
 		Pizza pizza = new Pizza();
 		pizza.adicionaIngrediente("Queijo");
 		carrinho.adicionaPizzaaoCarrinho(pizza);
-		double c = carrinho.getPrecoTotalPizzas();
-		assertEquals(c == 15, true);
+		double carrinhoPrecoTotal = carrinho.getPrecoTotalPizzas();
+		assertEquals(carrinhoPrecoTotal, 15);
 	}
 }

@@ -6,6 +6,8 @@ public class Principal_test {
 	void dicionaIngredientepizzaMeioAMeio() {
 		Pizza pizzaMeioAMeio = new Pizza();
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		pizzaMeioAMeio.adicionaIngrediente("Mussarela");
+		pizzaMeioAMeio.adicionaIngrediente("Palmito");
 
 	}
 	

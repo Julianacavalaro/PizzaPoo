@@ -14,8 +14,8 @@ class Pizza_test extends Pizza {
 	Pizza pizza = new Pizza();
 	pizza.adicionaIngrediente("Muçarela");
 	pizza.adicionaIngrediente("Catupiry");
-	assertEquals(pizza.getIngredientes().size() == 2 ,true);
-	assertEquals(pizza.getPreco() == 15, true);
+	assertEquals(pizza.getIngredientes().size() ,2);
+	assertEquals(pizza.getPreco(), 15);
 	}
 	
 	@Test
@@ -27,8 +27,8 @@ class Pizza_test extends Pizza {
 	pizza.adicionaIngrediente("Catupiry");
 	pizza.adicionaIngrediente("Muçarela");
 
-	assertEquals(pizza.getIngredientes().size() == 5 ,true);
-	assertEquals(pizza.getPreco() == 20, true);
+	assertEquals(pizza.getIngredientes().size() ,5);
+	assertEquals(pizza.getPreco(), 20);
 	}
 	
 	@Test
@@ -40,8 +40,8 @@ class Pizza_test extends Pizza {
 	pizza.adicionaIngrediente("Catupiry");
 	pizza.adicionaIngrediente("Muçarela");
 	pizza.adicionaIngrediente("Catupiry");
-	assertEquals(pizza.getIngredientes().size() == 6 ,true);
-	assertEquals(pizza.getPreco() == 23, true);
+	assertEquals(pizza.getIngredientes().size() ,6);
+	assertEquals(pizza.getPreco(), 23);
 
 
 	}
@@ -59,7 +59,7 @@ class Pizza_test extends Pizza {
 	void valorPizzaSemIngrediente() {
 	Pizza pizzaDeVento = new Pizza();
 	assertEquals(pizzaDeVento.getIngredientes().isEmpty(),true);
-	assertEquals(pizzaDeVento.getPreco() == 0, true);
+	assertEquals(pizzaDeVento.getPreco(), 0);
 	assertEquals(Pizza.getIgredientesMap().isEmpty() , true);
 	}
 
