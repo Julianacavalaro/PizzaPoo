@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-public class Principal_test {
+public class PrincipalTest {
 	
 	@Test
 	void dicionaIngredientepizzaMeioAMeio() {

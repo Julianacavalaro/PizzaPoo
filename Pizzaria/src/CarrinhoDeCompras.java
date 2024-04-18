@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class CarrinhoDeCompras  {
 
 	 double precoTotal;
-	private  ArrayList<Pizza> pizzas = new ArrayList<Pizza>();
+	private  ArrayList<Pizza> pizzasLista = new ArrayList<Pizza>();
 
 
 	// O carrinho não adiciona uma pizza caso não tenha ingredientes
@@ -12,19 +12,19 @@ public class CarrinhoDeCompras  {
 		if((pizza.getIngredientes().isEmpty())) {
 			System.out.println("Pizza Sem ingrediente - NAO adicionada ao carrinho");
 		} else {
-		pizzas.add(pizza);
+		pizzasLista.add(pizza);
 		System.out.println("Pizza COM ingredientes");
 		}	
 	}
 	
-	public int totalPizzas() {
-		return pizzas.size();
+	public int numeroTotalPizzas() {
+		return pizzasLista.size();
 	}
 	
 	public double getPrecoTotalPizzas(){
 
-		for(int i =0; i < pizzas.size() ; i++) {
-			precoTotal = precoTotal + pizzas.get(i).getPreco();
+		for(int i =0; i < pizzasLista.size() ; i++) {
+			precoTotal = precoTotal + pizzasLista.get(i).getPreco();
 		}
 			return precoTotal;
 	}

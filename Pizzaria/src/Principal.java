@@ -35,7 +35,7 @@ public class Principal {
 		cart.adicionaPizzaaoCarrinho(pizzaCarneDeSol);
 		cart.adicionaPizzaaoCarrinho(pizzaSemIngrediente);
 		
-		System.out.println("Total de pizzas no carrinho: " +cart.totalPizzas());
+		System.out.println("Total de pizzas no carrinho: " +cart.numeroTotalPizzas());
 		System.out.println("Valor total da compra: " + cart.getPrecoTotalPizzas() + " R$");
 		
 	
